@@ -21,7 +21,7 @@ public class Vote {
 
     @ManyToOne(optional = false)
     @JoinColumn(name = "voting_session_id", nullable = false)
-    private VotingSession votingSession;
+    private VotingSessionBase votingSession;
 
     @Column(name = "type_vote")
     @Enumerated(EnumType.STRING)
